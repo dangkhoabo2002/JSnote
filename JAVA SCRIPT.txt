@@ -1,0 +1,268 @@
+JAVA SCRIPT
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Define JS in html
+<script></script>
+
+// Print
+alert("hello")    	 // print on alert box
+document.write('Hello')  // print on page
+console.log('hello')	 // print on console
+
+
+// Variables 
+var name = 'Kow'
+let
+const
+document.write(name)
+
+
+// Operation
+let num1 = 5;
+let num2 = 3;
+document.write(num1 + num2)
+
+
+// Object
+let bottle{
+	name: 'Bottle',
+	usable: true,
+	number: 23,
+
+	drink: function(){
+		document.write('Sweety')
+	}
+};
+bottle.drink();
+
+
+
+
+
+// String
+let say = 'hello'
+document.write(say.length)
+document.write(say.split(' '))       // devide by space
+document.write(say.substring(1,10))  // cut from 1 to 10
+document.write(say.includes('e'))    // check word in string
+	
+
+
+
+
+
+// Array	
+
+//Option 1:
+const list = new Array(4); // create new array with length is 4
+student1[0] = 'An'
+student1[1] = 'Na'
+student1[2] = 'Anna'
+student1[3] = 'Nana'
+console.log(list)
+
+
+
+
+
+
+//Option2":
+const list = new Array('An', 'Na', 'Anna', 'Nana');
+console.log(list[0])
+
+// Control Statement
+const num = 10;
+if(num >5){
+	console.log('hello')
+}else{
+	console.log('hola')
+}
+
+/- same as java -/
+
+// Loop 
+for(const student of list){
+	document.write(student + 
+
+
+
+
+
+
+// Try catch
+try{
+	// May be error
+}
+catch(e){
+	// Analize the error
+}
+finally{
+	// Always run even error
+}
+
+
+
+
+
+// Syntax Function:
+Str.replace(Str2,Str3)      // Str2 become Str3
+Str.toUpperCase();
+Str.toUpperCase();
+Str.concat(str2,str3,...)   // return str2 + str3 + ...
+Str.charAt(index)	    // return index's position of String
+
+No.toString()		    // change date to be string 
+No.toFixed(N)		    // take N number after "." 
+No.toPrecison(N)	    // change date to be string and take N number after "." 
+
+
+
+
+
+
+// DOM SELECTOR
+var obj = document.getElementById("id")			// take object from id
+var objS = document.getElementByTagName("p")		// take an array object from tag 
+var objS = document.getElementByClassName("class") 	// take an array object from class
+var obj = document.querySelector("selector")		// take first object from selector
+var objS = document.getSelectorAll("selector")		// take an array from all data in chosen selector 
+
+
+
+
+// DOM CONTENT
+var html_content_1 = obj.innerHTML;
+	// take info from chosen tag
+
+var html_content_2 = obj.outerHTML;
+	// take data contains tag + info
+
+// (EXAMPLE)
+var obj = document.getElementById("div1");
+var content = obj.innerHTML; if obj is String
+var content = obj[0].innerHTML; if obj is Array
+
+==> take all data inside the tag has id is "div1"
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// LESSION of SUFU
+let div = document.getElementById("hello")
+"" : string
+`` : string
+'' : letter
+const (consistant)
+let (for every variable)
+
+
+
+
+// Take info by id
+document.getElementById("id").addEventListener("keyup", e==>{
+	console.log(document.getElementById("id").value);
+})
+
+
+
+
+// list every things in div tag:
+let div = document.getElementsById("id");
+console.log(div)
+
+arr.push(123);  // add new element at last of array
+arr[10] = 0;    // add value at position
+
+
+
+
+// Click 
+div.onClick = e ==> {
+	div.style.display = "none";
+}
+
+
+
+
+// Function
+
+function motcaiham(a,b){
+	return a*b;
+}
+
+const motcaiham2 = function(a,b){
+	return a*b;
+}
+
+const motcaiham3 = (a,b){
+	return a*b;
+}
+
+
+
+
+
+*** DOM = Document Of Model ***
+we need to make event in html'element, we use DOM
+<script scr="name.js"></script>
+&NOTE& : Put this in the bottom of body (recommend) or before </html>
+
+
+
+// Hover
+div.mouseover = function(e){
+	console.log("over"); 
+}
+
+// Mouse leaving
+div.onmouseleave = function(e){
+	div.style.background = "white"
+}
+
+
+
+// 
+let w = document.getElementById("width");
+let h = document.getElementById("height");
+let r = document.getElementById("result");
+let button = document.getElementById("calc");
+
+div.onClick = e ==> {
+	let width = pareInt(w.value);
+	let height = paresInt(h.value);
+
+	r.innerHTML = width + height;  // Change info in that line 
+}
+
+
+
+
+// Change info when click
+document.getElementById("test").onclick = e ==>{
+	r.innerHTML = 123;
+}
+
+
+// Remove
+div.remove();
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
